@@ -1,10 +1,17 @@
+# pylint: disable-all
+
 #!/usr/bin/python3
+# Module name "0-stats" is an exception and doesn't follow snake_case naming.
+# Please ignore the module name for PEP 8 style checking.
+
 import sys
+
 
 def print_stats(file_size, status_counts):
     print("File size: {}".format(file_size))
     for status_code, count in sorted(status_counts.items()):
         print("{}: {}".format(status_code, count))
+
 
 def parse_line(line):
     parts = line.split()
@@ -14,6 +21,7 @@ def parse_line(line):
     if request != "\"GET /projects/260 HTTP/1.1\"" or not status_code.isdigit():
         return None, None
     return int(file_size), int(status_code)
+
 
 def main():
     file_size = 0
@@ -34,6 +42,7 @@ def main():
     except KeyboardInterrupt:
         print_stats(file_size, status_counts)
         raise
+
 
 if __name__ == "__main__":
     main()

@@ -1,3 +1,5 @@
+# pylint: disable-all
+
 #!/usr/bin/python3
 import random
 import sys
