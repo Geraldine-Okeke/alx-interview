@@ -84,12 +84,3 @@ KeyboardInterrupt
 sleep(random.random())
 KeyboardInterrupt
 alexa@ubuntu:~/0x03-log_parsing$
-Repo:
-
-GitHub repository: alx-interview
-Directory: 0x03-log_parsing
-File: 0-stats.py
-
-# Author
-
-Okeke MaryGeraldine Ebele
